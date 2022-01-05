@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Background2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 9%;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: rgba(252, 245, 245, 0.993);
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #fcbc6e;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover:after{
+    width: 100%;
+}
+
+.content{ 
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    transform: translateY(-50%)
+}
+
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 20px;
+}
+
+button{ 
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 10px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #fcbc6e;
+    background: transparent;
+    color: wheat;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+
+span{
+    background: none;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 00.5s;
+}
+
+button:hover span{
+    width: 100%;
+}
+
+button:hover{
+    border: none;
+}
+
+.footer-bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: transparent;
+    height: auto;
+    width: 100vw;
+    font-family: "open sans";
+    font-size: 15px;
+    padding-top: 40px;
+    color: rgb(0, 0, 0);
+
+    
+}
+
+/*---about me---*/
+
+.content{ 
+    width: 100%;
+    top: 50%;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    transform: rotateY();
+}
+
+.content h2{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.content p{
+    font-size: 20px;
+    color: white;
+}
+
+/*---Educational---*/
+
+.content {
+    width: 100%;
+    top: 50%;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    transform: rotateY();
+}
+
+.content h3{
+    font-size: 50px;
+    margin-top: 20px;
+    color: rgb(233, 213, 176);
+}
+
+.picture {
+    width: 60%;
+    margin: 20px;
+}
+
+.photo{
+    width: 75%;
+    margin: 20px;
+    text-align: center;
+    
+}
+
+.figure{
+    width: 40%;
+    margin: 20px;
+}
+
+
+/*---Work Experience---*/
+
+.content{
+    width: 100%;
+    top: 50%;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    transform: rotateY();
+}
+
+.content h4{
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(233, 213, 176);
+}
+
+.center{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 30%;
+}
+
+.left{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 35%;
+}
+
+/*---skills---*/
+
+.content{
+    width: 100%;
+    top: 50%;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    transform: rotateY();
+}
+
+.content h5{
+    font-size: 20px;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.content h5 p{
+    font-size: 21px
+}
+
+.content h6{
+    font-size: 20px;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.content h6 p{
+    font-size: 21px;
+}
